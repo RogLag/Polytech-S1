@@ -84,7 +84,7 @@ def decode2(chaine: str, cle: str) -> str:
     result = "" # On initialise une chaine vide pour stocker la chaine décodée
 
     for i in range(0, len(chaine)): # On parcourt la chaine
-        result += chr(cle.index(chaine[i])+97) # On ajoute la lettre de la chaine codée à la chaine, ici on utilise ord pour avoir le code ASCII de la lettre et on ajoute 97 pour avoir la position de la lettre dans l'alphabet
+        result += chr(cle.index(chaine[i])+97) # On ajoute la lettre de la chaine codée à la chaine, ici on utilise chr pour avoir le charactère correspondant au code ASCII au quel on a ajouté 97 pour avoir la position de la lettre dans l'alphabet
 
     return result # On retourne la chaine décodée
 
